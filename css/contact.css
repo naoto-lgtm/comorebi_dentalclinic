@@ -239,10 +239,7 @@ textarea {
     .personal_info .wrap h4 {
         font-size: 1.6rem;
     }
-    .p_title,
-    .personal_info p:last-child {
-        padding-top: 10%;
-    }
+
     .personal_info {
         padding-bottom: 10%;
     }
