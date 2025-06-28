@@ -1,0 +1,155 @@
+@charset "utf-8";
+
+
+/* -----clinic_area----- */
+
+.clinic_area {
+    padding-top: 110px;
+    margin-top: 110px;
+}
+
+.clinic_area .sec_title .title02::before {
+    content: "Clinic";
+    display: inline-block;
+    position: absolute;
+    top: -3.5rem;
+    left: -3rem;
+    color: #A0C878;
+    font-family: "Caveat", cursive;
+    font-size: 5.5rem;
+    transform: rotate(-15deg);
+    z-index: -1;
+}
+
+.clinic_text .title03 {
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+.clinic_text p:nth-child(2),
+.clinic_text p:nth-child(3),
+.clinic_text p:nth-child(4) {
+    padding: .8rem 0;
+}
+
+.clinic_text p:nth-child(3) {
+    letter-spacing: 1px;
+}
+
+.clinic_text p:nth-child(4) {
+    line-height: 3rem;
+}
+
+.clinic_text p:last-child {
+    padding: .8rem 0 3rem;
+    line-height: 3rem;
+}
+
+.color_g {
+    color: #A0C878;
+}
+
+.clinic_area .flex_box {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.clinic_img {
+    width: 70%;
+    opacity: .5;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.clinic_img img {
+    border-radius: 30px;
+
+}
+
+/* -----staff_area----- */
+
+.staff_area {
+    margin-top: 10%;
+}
+
+.staff_area .sec_title .title02::before {
+    content: "Staff";
+    display: inline-block;
+    position: absolute;
+    top: -3.5rem;
+    left: -3rem;
+    color: #A0C878;
+    font-family: "Caveat", cursive;
+    font-size: 5.5rem;
+    transform: rotate(-15deg);
+    z-index: -1;
+}
+
+.staff_area dl {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.staff_area dl dt {
+    width: 30%;
+    margin-bottom: 5%;
+}
+
+.staff_area dl dt img {
+    border-radius: 30px;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.staff_area dl dd {
+    line-height: 3.2rem;
+    width: 65%;
+}
+
+@media screen and (max-width: 800px) {
+    /* .clinic_area,
+    .staff_area {
+        padding: 0 5%;
+    } */
+    .clinic_area {
+        padding-top: 15%;
+        margin-top: 70px;
+    }
+    .clinic_area .sec_title .title02,
+    .staff_area .title02 {
+        font-size: 2.4rem;
+    }
+    .clinic_area .sec_title .title02::before,
+    .staff_area .sec_title .title02::before {
+        font-size: 4rem;
+        left: -2rem;
+        top: -2.5rem;
+        letter-spacing: 3px;
+    }
+    .clinic_img {
+        padding-bottom: 3rem;
+        position: static;
+        width: 100%;
+        opacity: 1;
+    }
+    .clinic_area .flex_box {
+        flex-direction: column-reverse;
+    }
+    /* -----staff_area----- */
+    .staff_area dl {
+        flex-direction: column;
+    }
+    .staff_area dl dt,
+    .staff_area dl dd {
+        width: 100%;
+    }
+    .staff_area dl dd {
+        padding-bottom: 5rem;
+    }
+}

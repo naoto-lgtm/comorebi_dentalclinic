@@ -1,0 +1,136 @@
+@charset "utf-8";
+
+/* -----news.html----- */
+
+.news_area {
+    background-image: url(../img/news_bg01.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    background-color: rgba(255, 255, 255, .5);
+    background-blend-mode: screen;
+    height: 100%;
+    padding: 110px 0;
+    margin-top: 110px;
+}
+
+.news_wrapper .sec_title .title02::before {
+    color: #FAF6E9;
+}
+
+.news_item {
+    padding: 3rem 5rem;
+}
+
+/* -----pagination----- */
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination_item {
+    padding-top: 4rem;
+}
+
+.pagination_item_link {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    background: #a0c878;
+    font-size: 1.4rem;
+    color: #fff;
+    font-weight: bold;
+    transition: all 0.15s linear;
+}
+
+/* -----single01----- */
+
+.news_area.single01 {
+    background-image: url(../img/news_bg02.jpg);
+    background-color: rgba(255, 255, 255, .6);
+}
+
+.single01 .sec_title .title02::before {
+    content: "News";
+    display: inline-block;
+    position: absolute;
+    top: -3.5rem;
+    left: -3rem;
+    color: #A0C878;
+    font-family: "Caveat", cursive;
+    font-size: 5.5rem;
+    transform: rotate(-15deg);
+    z-index: -1;
+}
+
+.single01 .title03 {
+    font-size: 2.4rem;
+    padding-bottom: 0;
+}
+
+.single01_box {
+    line-height: 30px;
+    padding: 0 5%
+}
+
+.singel01_text {
+    padding: 3% 0;
+}
+
+.singel01_text p:nth-child(2) {
+    padding: 1.6rem 0;
+}
+
+.singel01_text p:nth-child(3) {
+    padding-bottom: 1.6rem;
+}
+
+.b {
+    color: #C87878;
+    font-weight: bold;
+}
+
+.sp_br {
+    display: none;
+}
+
+
+/* レスポンシブ */
+
+@media screen and (max-width: 800px) {
+    .sp_br {
+        display: block;
+    }
+    /* -----news_area----- */
+    .news_area {
+        margin-top: 70px;
+        padding: 15% 0;
+    }
+    .news_area .news_item {
+        padding:  8% 0 1%;
+    }
+    /* -----news_single01----- */
+    .single01 .sec_title .title02::before {
+        font-size: 4rem;
+        left: -1rem;
+        top: -2.5rem;
+    }
+    .single01 .title03 {
+        font-size: 1.9rem;
+        letter-spacing: -1px;
+    }
+    .pagination_item {
+        padding-top: 1.6rem;
+    }
+    .news_area .news_item:first-child {
+        padding-top: 1.6rem;
+    }
+}

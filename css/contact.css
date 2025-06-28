@@ -1,0 +1,253 @@
+@charset "UTF-8";
+
+/* -----contact_area----- */
+
+.contact_area {
+    margin-top: 110px;
+    padding-top: 100px;
+}
+
+.contact_area .sec_title .title02::before {
+    content: "Contact";
+    display: inline-block;
+    position: absolute;
+    top: -3.5rem;
+    left: -3rem;
+    color: #A0C878;
+    font-family: "Caveat", cursive;
+    font-size: 5.5rem;
+    transform: rotate(-15deg);
+    z-index: -1;
+}
+
+.contact_text {
+    padding: 5% 0;
+}
+
+.contact_text p:first-child {
+    padding-bottom: 1%;
+}
+
+.reservation_box .title03 {
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+.reservation_box dl {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1.6rem 0;
+}
+
+.reservation_box dt {
+    color: #A0C878;
+    padding-bottom: 1%;
+    width: 3%;
+}
+
+.reservation_box dd {
+    width: 97%;
+}
+
+/* -----reservation_btn----- */
+
+.reservation_btn {
+    background-color: #A0C878;
+    border-radius: 50px;
+    color: #fff;
+    display: inline-block;
+    padding: 1% 5%;
+    margin: 1.6rem 0;
+    text-align: center;
+    width: 20%;
+}
+
+
+/* -----form_area----- */
+
+.form_area {
+    margin-top: 5%;
+}
+
+.form_area .title03 {
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+.form_wrapper {
+    background: #FAF6E9;
+    border-radius: 30px;
+    padding: 5%;
+}
+
+.required {
+    background: #C87878;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 1.6rem;
+    padding: .2rem 1.2rem;
+    margin-left: 1rem;
+    text-align: center;
+}
+
+.optional {
+    background: #D9D9D9;
+    border-radius: 15px;
+    color: #434343;
+    font-size: 1.6rem;
+    padding: .2rem 1.2rem;
+    margin-left: 1rem;
+    text-align: center;
+}
+
+.form_wrapper dl {
+    margin-bottom: 5%;
+}
+
+.form_wrapper dt,
+.form_wrapper dd {
+    margin-bottom: 1.6rem;
+}
+
+input {
+    border: 1px solid #434343;
+    background: #FFFDF6;
+    border-radius: 50px;
+    padding: .5%;
+    width: 100%;
+}
+
+.gender input {
+    width: inherit;
+}
+
+.gender_wrap {
+    display: inline-block;
+    /* margin-left: 1.6rem; */
+}
+
+.gender_wrap:nth-child(n+2) {
+    padding-left: 3rem;
+}
+
+textarea {
+    border: 1px solid #434343;
+    background: #FFFDF6;
+    border-radius: 15px;
+    padding: .5%;
+    width: 100%;
+    field-sizing: content;
+    min-height: 4em;   /* 必要に応じて設定 */
+    max-height: 10em;  /* 必要に応じて設定 */
+    resize: none;      /* ユーザーによるリサイズを禁止したい場合 */
+}
+
+.personal_info {
+    padding-bottom: 5%;
+}
+
+.personal_info .wrap {
+    border: 1px solid #434343;
+    background: #FFFDF6;
+    border-radius: 15px;
+    max-height: 300px;
+    overflow-y: scroll;
+    margin-top: 0;
+    padding: 3%;
+}
+
+.agree {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;   
+    padding-top: 5%;      
+}
+
+.personal_info p:last-child input {
+    width: 5%;
+}
+
+.p_title {
+    color: #A0C878;
+    font-size: 2rem;
+    font-weight: bold;
+    padding-top : 3%;
+}
+
+.personal_info .wrap h4 {
+    font-size: 2rem;
+}
+
+.button input {
+    background: #A0C878;
+    border: none;
+    color: #fff;
+    font-size: 2rem;
+    padding: 1% 0;
+}
+
+/* -----レスポンシブ----- */
+
+@media screen and (max-width:800px) {
+    .contact_area {
+        padding: 10% 0 0;
+        margin-top: 70px;
+    }
+    .sec_title .title02 {
+        font-size: 2.4rem;
+    }
+    .contact_area .sec_title .title02::before {
+        font-size: 4rem;
+        top: -2.5rem;
+        left: -2rem;
+    }
+    .contact_text p:first-child {
+        background-position: 3%;
+    }
+    .reservation_box .title03,
+    .form_area .title03 {
+        font-size: 1.8rem;
+    }
+    .reservation_box dl {
+        align-items: flex-start;
+    }
+    .reservation_box dt {
+        font-size: 1.4rem;
+        padding-top: .2rem;
+        margin-bottom: 3%;
+        width: 5%;
+    }
+    .reservation_box dd:nth-child(n+2) {
+        margin-bottom: 3%;
+    }
+    .reservation_box dd {
+        padding-left: 1%;
+        width: 95%;
+    }
+    .reservation_btn {
+        width: 50%  ;
+    }
+    .form_area dl:nth-of-type(7) p {
+        font-size: 1.4rem;
+    }
+    .form_wrapper dl {
+        margin-bottom: 10%;
+    }
+    .personal_info p {
+        font-size: 1.4rem;
+    }
+    .personal_info .wrap h4 {
+        font-size: 1.6rem;
+    }
+    .p_title,
+    .personal_info p:last-child {
+        padding-top: 10%;
+    }
+    .personal_info {
+        padding-bottom: 10%;
+    }
+    .required,
+    .optional {
+        font-size: 1.2rem;
+    }
+}

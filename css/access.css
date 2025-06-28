@@ -1,0 +1,155 @@
+@charset "utf-8";
+
+.access_area {
+    padding-top: 110px;
+    margin-top: 110px;
+}
+
+.access_area .sec_title .title02::before {
+    content: "Access";
+    display: inline-block;
+    position: absolute;
+    top: -3.5rem;
+    left: -3rem;
+    color: #A0C878;
+    font-family: "Caveat", cursive;
+    font-size: 5.5rem;
+    transform: rotate(-15deg);
+    z-index: -1;
+}
+
+.title04 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.map_area .title03 {
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+.map_area .tel {
+    padding-bottom: 5%;
+}
+
+.transportation_area .title03,
+.visit .title03 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 3rem;
+}
+
+.transportation_area .title03::after {
+    content: "";
+    width: 75%;
+    border-top: 1px solid #A0C878;
+}
+
+
+.visit .title03::after {
+    content: "";
+    width: 80%;
+    border-top: 1px solid #A0C878;
+}
+
+
+/* -----map----- */
+
+.map_area .map iframe {
+    width: 100%;
+    height: 450px;
+    border-radius: 30px;
+}
+
+.adresss {
+    padding: .8rem 0;
+}
+
+
+/* -----transportation_area---- */
+
+.transportation_area dl {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-bottom: 2.4rem;
+}
+
+.transportation_area dl:last-child {
+    padding-bottom: 5%;
+}
+
+.transportation_area dl dt {
+    color: #A0C878;
+    font-size: 2.4rem;
+    font-weight: bold;
+    padding: .6rem 0;
+    width: 4%;
+}
+
+.transportation_area dl dd {
+    padding: .6rem 0;
+    width: 96%;
+}
+
+.sp_br {
+    display: none;
+}
+
+
+
+/* ------レスポンシブ----- */
+
+@media screen and (max-width:800px) {
+    .sp_br {
+        display: block;
+    }
+    .access_area {
+        padding: 10% 0 0;
+        margin-top: 70px;
+    }
+    .access_info_area {
+        padding: 0 0 10%;
+    }
+    .sec_title .title02 {
+        font-size: 2.4rem;
+    }
+    .access_area .sec_title .title02::before {
+        font-size: 4rem;
+        top: -2.5rem;
+        left: -2rem;
+    }
+    .map_area .title03 {
+        font-size: 1.8rem;
+    }
+    .transportation_area .title03, .visit .title03 {
+        font-size: 1.8rem;
+    }
+    .transportation_area .title03::after {
+        width: 50%;
+    }
+    .title04 {
+        font-size: 1.6rem;
+        padding-bottom: 1.6rem;
+    }
+    .transportation_area dl {
+        align-items: flex-start;
+    }
+    .transportation_area dl dt {
+        font-size: 1.4rem;
+        width: 5%;
+    }
+    .transportation_area dl dd {
+        width: 95%;
+    }
+    .visit .title03::after {
+        width: 60%;
+    }
+    .map_area .map iframe {
+        height: 350px;
+        border-radius: 15px;
+    }
+}
