@@ -83,7 +83,10 @@
         grid-template-columns: 1fr 1fr;
         gap: 10px;
     }
-
+    .column_item img {
+        height: 100px;
+        padding: 1rem;
+    }
     .column_list .column_item {
         width: 100%;
         height: 100%;

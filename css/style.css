@@ -251,20 +251,6 @@ table {
     width: 100%;
 }
 
-/* .news_wrapper::after {
-    content: "";
-    display: inline-block;
-    width: 300px;
-    height: 250px;
-    background: url(../img/green_img01.png);
-    background-repeat: no-repeat;
-    background-size: 90% auto;
-    position: absolute;
-    top: -10rem;
-    right: -15rem;
-    opacity: .6;
-} */
-
 .sec_title .title02 {
     font-size: 3.2rem;
     font-weight: bold;
@@ -345,20 +331,6 @@ table {
     width: 100%;
 }
 
-/* .column_area::before {
-    content: "";
-    display: inline-block;
-    background: url(../img/green_img02.png);
-    background-repeat: no-repeat;
-    background-size: 85% auto;
-    position: absolute;
-    top: -25%;
-    left: -15%;
-    width: 300px;
-    height: 250px;
-    opacity: .5;
-} */
-
 .column_area .sec_title .title02::before {
     content: "Column";
     display: inline-block;
@@ -398,6 +370,7 @@ table {
     height: 200px;
     object-fit: contain;
     margin-bottom: 1rem;
+    padding: 2rem;
 }
 
 .column_btn {
@@ -420,20 +393,6 @@ table {
     position: relative;
     margin-top: 15rem;
 }
-
-/* .message_area::after {
-    content: "";
-    display: inline-block;
-    background-image: url(../img/green_img03.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 150px;
-    height: 120px;
-    position: absolute;
-    bottom: -8%;
-    right: -5%;
-    opacity: .7;
-} */
 
 .message_area .sec_title .title02::before {
     content: "Message";
@@ -504,36 +463,6 @@ table {
     position: relative;
     margin-top: 15rem;
 }
-
-/* .treatment_area::before {
-    content: "";
-    display: inline-block;
-    background-image: url(../img/green_img04.png);
-    background-repeat: no-repeat;
-    background-size: 80% auto;
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    bottom: -22%;
-    right: 20%;
-    opacity: .6;
-    z-index: -1;
-} */
-
-/* .treatment_area::after {
-    content: "";
-    display: inline-block;
-    background-image: url(../img/green_img05.png);
-    background-repeat: no-repeat;
-    background-size: 80% auto;
-    width: 150px;
-    height: 165px;
-    position: absolute;
-    bottom: -35%;
-    right: 6%;
-    opacity: .7;
-    z-index: -1;
-} */
 
 .treatment_area .sec_title .title02::before {
     content: "Treatment";
