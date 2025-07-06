@@ -1089,6 +1089,7 @@ table {
     .column_item img {
         height: 120px;
         width: 100%;
+        padding: 1rem;
     }
     .column_list {
         overflow-x: scroll;
